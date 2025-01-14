@@ -48,9 +48,11 @@ int main()
 
         } else if(gpio_get(BTN_A_PIN) == 0 ) { // verifica se o apenas o botão A estiver pressionado
             set_leds(1, 0, 0); //LED vermelho acesso
+            printf("A Pressionado\n");
 
         } else if(gpio_get(BTN_B_PIN) == 0) { //verifica se botão B está pressionado
             set_leds(0, 1, 0); //LED verde aceso
+            printf("B Pressionado\n");
 
         } else { // se nenhum botão estiver pressionado
             set_leds(0, 0, 1); //LED azul aceso
