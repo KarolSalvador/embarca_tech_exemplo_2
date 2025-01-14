@@ -44,6 +44,7 @@ int main()
     //Aqui eu alterei como o programa identifica se o botão foi acionado
         if(gpio_get(BTN_A_PIN) == 0 && gpio_get(BTN_B_PIN) == 0 ) { //verifica se botão A e B estão pressionados
             set_leds(1, 1, 1); // Todos os LEDS acesos (branco)
+            printf("A e B Pressionado\n");
 
         } else if(gpio_get(BTN_A_PIN) == 0 ) { // verifica se o apenas o botão A estiver pressionado
             set_leds(1, 0, 0); //LED vermelho acesso
